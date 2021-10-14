@@ -11,8 +11,15 @@
  
  import Header from "./header"
  import Footer from "./footer"
+ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+ import { 
+   faFacebookSquare, 
+   faLinkedin, 
+   faTwitterSquare 
+  } from "@fortawesome/free-brands-svg-icons"
  import "./layout.css"
  import "./header.css"
+ import "../styles/global.css"
  
  const Layout = ({ children }) => {
    const data = useStaticQuery(graphql`
@@ -41,6 +48,11 @@
              marginTop: `2rem`,
            }}
          >
+          <div className="icons">
+            <FontAwesomeIcon icon={faFacebookSquare} />
+            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faTwitterSquare} />
+          </div>
            <Footer />
            © {new Date().getFullYear()}, Built with
            {` `}

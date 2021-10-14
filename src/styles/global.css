@@ -11,3 +11,9 @@ html {
     justify-content: space-between;
     margin-top: 15px;
 }
+
+.icons {
+    display: inline-grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+}
