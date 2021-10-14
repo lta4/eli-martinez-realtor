@@ -1,0 +1,13 @@
+html {
+    background-color: lavender;
+    scroll-behavior: smooth;
+}
+
+/*************** NAV **********************/
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
