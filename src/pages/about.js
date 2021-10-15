@@ -2,6 +2,7 @@ import * as React from "react"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 import PropTypes from "prop-types"
+import * as styles from "../styles/about.module.css"
 
 const About = () => (
     <Layout>

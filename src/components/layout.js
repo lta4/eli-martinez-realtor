@@ -8,7 +8,6 @@
  import * as React from "react"
  import PropTypes from "prop-types"
  import { useStaticQuery, graphql } from "gatsby"
- 
  import Header from "./header"
  import Footer from "./footer"
  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -19,6 +18,7 @@
   } from "@fortawesome/free-brands-svg-icons"
  import "./layout.css"
  import "./header.css"
+//  import * as styles from "../styles/home.module.css"
  import "../styles/global.css"
  
  const Layout = ({ children }) => {
@@ -43,11 +43,7 @@
          }}
        >
          <main>{children}</main>
-         <footer
-           style={{
-             marginTop: `2rem`,
-           }}
-         >
+         <footer className="footerContainer">
           <div className="icons">
             <FontAwesomeIcon icon={faFacebookSquare} />
             <FontAwesomeIcon icon={faLinkedin} />
@@ -56,7 +52,7 @@
            <Footer />
            © {new Date().getFullYear()}, Built with
            {` `}
-           Gatsby by <a href="https://capstone-anxiety-app.netlify.app">Andrew Arias</a>
+           Gatsby by <a href="https://capstone-anxiety-app.netlify.app" className="andrewLink">Andrew Arias</a>
          </footer>
        </div>
      </>
