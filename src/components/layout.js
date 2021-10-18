@@ -45,6 +45,7 @@
          <main>{children}</main>
          <footer className="footerContainer">
           <div className="icons">
+            {/* <link rel="stylesheet" href="www.linkedin.com/in/andrewarias4" icon={faLinkedin}></link> */}
             <FontAwesomeIcon icon={faFacebookSquare} />
             <FontAwesomeIcon icon={faLinkedin} />
             <FontAwesomeIcon icon={faTwitterSquare} />
