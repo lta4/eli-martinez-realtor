@@ -2,7 +2,7 @@ import * as React from "react"
 import { Router } from "@reach/router"
 import { Link } from "gatsby"
 import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
-// import Layout from "../components/layout"
+import Layout from "../components/layout"
 import Seo from "../components/seo"
 // import "../components/header.css"
 import About from "../pages/about"
@@ -26,7 +26,7 @@ const Account = ({ siteTitle }) => {
       <>
         <Seo title="Home" />
         <div className="headContainer">
-          <nav className="navLinks">
+          <nav className="links">
                 <Link id="homeL" to="/account/">Home</Link>{" "}
                 <Link id="aboutL" to="/account/about/">About</Link>{" "}
                 <Link id="approachL" to="/account/approach/">Our Approach</Link>{" "}

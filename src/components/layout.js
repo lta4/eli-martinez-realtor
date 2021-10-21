@@ -33,7 +33,7 @@
    `)
  
    return (
-     <>
+     <div className="layout">
        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
        <div
          style={{
@@ -56,7 +56,7 @@
            Gatsby by <a href="https://capstone-anxiety-app.netlify.app" className="andrewLink">Andrew Arias</a>
          </footer>
        </div>
-     </>
+     </div>
    )
  }
  
