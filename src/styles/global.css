@@ -6,11 +6,11 @@
 }
 
 html, body {
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body {
-    background-color: lightgrey;
+    background-color: lightgreen;
     background-repeat: no-repeat;
 }
 
@@ -31,11 +31,11 @@ p {
 .icons {
     display: inline-grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 10px;
+    grid-gap: 50px;
 }
 
 .icons svg {
-    width: 30px;
+    width: 80px;
     height: 30px;
     color: #B9B9B9;
 }
